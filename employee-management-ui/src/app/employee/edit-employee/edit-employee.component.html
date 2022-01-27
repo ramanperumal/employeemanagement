@@ -1,0 +1,106 @@
+<div class="col-md-6 user-container">
+  <h2 class="text-center">Edit Employee</h2>
+  <form [formGroup]="editForm" (ngSubmit)="onSubmit()">
+    <div class="hidden">
+       <label for="id">Id:</label>
+      <input type="text" formControlName="id" placeholder="id" name="id" class="form-control" id="id">
+    </div>
+
+    <div class="form-group">
+      <label for="name">Name:</label>
+      <input formControlName="name" placeholder="Name" name="name" class="form-control" id="name">
+    </div>
+
+    <div class="form-group">
+      <label for="gender">Gender:</label>
+      <select formControlName="gender" placeholder="Gender" name="gender" class="form-control" id="gender">  
+        <option>Male</option>  
+        <option>Female</option>
+       </select>
+    </div>
+
+    <div class="form-group">
+      <label for="email">Email:</label>
+      <input type="email" formControlName="email" placeholder="email" name="email" class="form-control" id="email">
+    </div>
+    
+    <div class="form-group">
+      <label for="contact">Contact:</label>
+      <input type="text" pattern="\d*" maxlength="10" formControlName="contact" placeholder="Contact" name="contact" class="form-control" id="contact">
+    </div>
+
+    <div formGroupName="address">
+	    <div class="form-group">
+	      <label for="street">Address Street:</label>
+	      <input  formControlName="street" placeholder="Street" name="street" class="form-control" id="street">
+	    </div>
+	    
+	    <div class="form-group">
+	      <label for="city">Address City:</label>
+	      <input  formControlName="city" placeholder="City" name="city" class="form-control" id="city">
+	    </div>
+	    
+	    <div class="form-group">
+	      <label for="state">Address State:</label>
+	      <select formControlName="state" placeholder="State" name="state" class="form-control" id="state">  
+	        	<option>AK</option>
+				<option>AZ</option>
+				<option>AR</option>
+				<option>CA</option>
+				<option>CO</option>
+				<option>CT</option>
+				<option>DE</option>
+				<option>FL</option>
+				<option>GA</option>
+				<option>HI</option>
+				<option>ID</option>
+				<option>IL</option>
+				<option>IN</option>
+				<option>IA</option>
+				<option>KS</option>
+				<option>KY</option>
+				<option>LA</option>
+				<option>ME</option>
+				<option>MD</option>
+				<option>MA</option>
+				<option>MI</option>
+				<option>MN</option>
+				<option>MS</option>
+				<option>MO</option>
+				<option>MT</option>
+				<option>NE</option>
+				<option>NV</option>
+				<option>NH</option>
+				<option>NJ</option>
+				<option>NM</option>
+				<option>NY</option>
+				<option>NC</option>
+				<option>ND</option>
+				<option>OH</option>
+				<option>OK</option>
+				<option>OR</option>
+				<option>PA</option>
+				<option>RI</option>
+				<option>SC</option>
+				<option>SD</option>
+				<option>TN</option>
+				<option>TX</option>
+				<option>UT</option>
+				<option>VT</option>
+				<option>VA</option>
+				<option>WA</option>
+				<option>WV</option>
+				<option>WI</option>
+				<option>WY</option>
+	       </select>
+	    </div>
+	    
+	    <div class="form-group">
+	      <label for="zip">Address Zip:</label>
+	      <input type="text" pattern="\d*" maxlength="5" formControlName="zip" placeholder="Zip" name="zip" class="form-control" id="zip">
+	    </div>
+	</div>
+
+    <button class="btn btn-success">Update</button>
+  </form>
+</div>
