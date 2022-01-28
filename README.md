@@ -13,7 +13,7 @@ Artifacts
 1) postman collections for api testing.
 
 Instructions
-1) Install postgresql server in your local. Open pgadmin from your windows tab.
+1) Install postgresql server in your local. Open pgadmin from your windows tab. Create a database 'employee'
 2) Import the spring boot app employee-management-api into STS and start server. Server runs at http://localhost:8080 by default.
 3) Download the employee-management-ui in your local. Open the command prompt in that folder and run following commands
 
