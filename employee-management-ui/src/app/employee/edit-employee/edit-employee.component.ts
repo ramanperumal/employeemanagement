@@ -18,25 +18,20 @@ export class EditEmployeeComponent implements OnInit {
 
   ngOnInit() {
     let employeeId = window.localStorage.getItem("editEmployeeId");
-    if(!employeeId) {
-      alert("Invalid action.")
-      this.router.navigate(['list-employee']);
-      return;
-    }
     this.editForm = this.formBuilder.group({
       id: [''],
       name: ['', Validators.required],
       gender: ['', Validators.required],
       email: ['', Validators.required],
-      contact: ['', Validators.required],
+      contact: ['', Validators.maxLength(10)],
       address : this.formBuilder.group({
 			street: ['', Validators.required],
 			city: ['', Validators.required],
 	        state: ['', Validators.required],
-	        zip: ['', Validators.required]
+	        zip: ['', Validators.maxLength(4)]
 	  })
     });
-    this.apiService.getEmployeeById(employeeId)
+    this.apiService.getEmployeeById(+employeeId)
       .subscribe( data => {
         this.editForm.setValue(data);
       });
@@ -47,12 +42,8 @@ export class EditEmployeeComponent implements OnInit {
       .pipe(first())
       .subscribe(
         data => {
-          if(data != 'undefined') {
             alert('Employee updated successfully.');
             this.router.navigate(['list-employee']);
-          }else {
-            alert('Employee update failed');
-          }
         },
         error => {
           alert(error);

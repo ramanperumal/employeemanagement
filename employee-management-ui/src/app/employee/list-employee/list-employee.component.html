@@ -4,7 +4,6 @@
   <table class="table table-striped">
     <thead>
     <tr>
-      <th class="hidden">Id</th>
       <th>Name</th>
       <th>Gender</th>
       <th>Email</th>
@@ -14,7 +13,6 @@
     </thead>
     <tbody>
     <tr *ngFor="let employee of employees">
-      <td class="hidden">{{employee.id}}</td>
       <td>{{employee.name}}</td>
       <td>{{employee.gender}}</td>
       <td>{{employee.email}}</td>

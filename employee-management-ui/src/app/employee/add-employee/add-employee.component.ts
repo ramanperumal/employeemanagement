@@ -20,12 +20,12 @@ export class AddEmployeeComponent implements OnInit {
       name: ['', Validators.required],
       gender: ['', Validators.required],
       email: ['', Validators.required],
-      contact: ['', Validators.required],
+      contact: ['', Validators.maxLength(10)],
       address : this.formBuilder.group({
 			street: ['', Validators.required],
 			city: ['', Validators.required],
 	        state: ['', Validators.required],
-	        zip: ['', Validators.required]
+	        zip: ['', Validators.maxLength(4)]
 	  })      
     });
 

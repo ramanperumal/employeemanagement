@@ -10,8 +10,8 @@ export class ApiService {
   constructor(private http: HttpClient) { }
   baseUrl: string = 'http://localhost:8080/employees/';
 
-  getEmployees() : Observable<ApiResponse> {
-    return this.http.get<ApiResponse>(this.baseUrl);
+  getEmployees() : Observable<Employee[]> {
+    return this.http.get<Employee[]>(this.baseUrl);
   }
 
   getEmployeeById(id: number): Observable<ApiResponse> {
