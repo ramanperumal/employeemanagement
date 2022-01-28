@@ -25,3 +25,12 @@ Open browser and enter http://localhost:4200  ( UI application opens)
 ![image](https://user-images.githubusercontent.com/98563243/151461617-6654e279-d6a4-4edb-979d-6e7619cf1c3b.png)
 
 Now start adding employees, editing and deleting employees.
+
+Add Employee screen
+![image](https://user-images.githubusercontent.com/98563243/151465098-7c8f7dd5-6bf5-41b9-9cba-6209076367cd.png)
+
+Update Employee screen
+![image](https://user-images.githubusercontent.com/98563243/151465156-b50a742b-81b5-4de9-85d9-fa5b5e23fe2a.png)
+
+After adding employees
+![image](https://user-images.githubusercontent.com/98563243/151465025-64f2f916-db2b-4c0e-b114-8d528e5d2d05.png)
