@@ -34,3 +34,5 @@ Update Employee screen
 
 After adding employees
 ![image](https://user-images.githubusercontent.com/98563243/151465025-64f2f916-db2b-4c0e-b114-8d528e5d2d05.png)
+
+For testing purpose we can use Employee.postman_collection.json added.
