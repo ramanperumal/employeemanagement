@@ -17,9 +17,9 @@ Instructions
 2) Import the spring boot app employee-management-api into STS and start server. Server runs at http://localhost:8080 by default.
 3) Download the employee-management-ui in your local. Open the command prompt in that folder and run following commands
 
-npm install
-npm install -g @angular/cli
-ng serve
+1) npm install
+2) npm install -g @angular/cli
+3) ng serve
 
 Open browser and enter http://localhost:4200  ( UI application opens)
 ![image](https://user-images.githubusercontent.com/98563243/151461617-6654e279-d6a4-4edb-979d-6e7619cf1c3b.png)
